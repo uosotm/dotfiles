@@ -4,31 +4,21 @@ set shiftwidth=2
 set softtabstop=2
 set autoindent
 set background=dark
-colorscheme hybrid
-syntax on
 
 call plug#begin('~/.vim/plugged')
 
 " General
-Plug 'Townk/vim-autoclose'
+Plug 'cohama/lexima.vim'
 Plug 'editorconfig/editorconfig-vim'
 
 " Color scheme
-Plug 'w0ng/vim-hybrid', {'do': 'cp colors/* ~/.vim/colors/'}
+Plug 'w0ng/vim-hybrid'
 
-" Markdown
-Plug 'plasticboy/vim-markdown'
-
-" Rust
-Plug 'rust-lang/rust.vim'
-
-" Golang
-Plug 'fatih/vim-go'
-
-" JavaScript / Vue.js
-Plug 'pangloss/vim-javascript'
-Plug 'posva/vim-vue'
+" Syntax highlighting
+Plug 'sheerun/vim-polyglot'
 
 call plug#end()
 
 let g:loaded_logipat = 1
+colorscheme hybrid
+syntax on
