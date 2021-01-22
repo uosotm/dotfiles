@@ -11,13 +11,5 @@ do
   ln -sfnv $PWD/$f $HOME/$f
 done
 
-if [ ! -d  ~/.vim/colors ]; then
-  mkdir -p ~/.vim/colors
-fi
-
-# Install vim-plug
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-
 popd
 exit 0
